@@ -1,29 +1,35 @@
 <div class="main">
 
+  <h1>test</h1>
 
   <div class="ima-1-container">
     <div class="img-1">
     </div>
   </div>
 
-  <div class="title">
+  <div class="titles">
     <h1>Villa la Houle</h1>
     <h3>Cap Malheureux</h3>
     <p>Mauritius</p>
   </div>
 
-  <div class="mini-gallery">
+  <div class="container-mini-gallery">
     <div class="img-mini-gallery"></div>
     <div class="img-mini-gallery"></div>
   </div>
 
-  <div class="text-1">
-    <p>Découvrez le charme de Villa La Houle, une maison de plage paisible nichée au bord de la mer, à quelques pas de la dynamique Grand Baie. <br>
-    Avec ses trois chambres magnifiquement aménagées, ce havre côtier est parfait pour les familles ou les groupes en quête de détente et de tranquillité.
-    </p>
+  <div class="container-text-right">
+    <div class="img-text-right">
+
+    </div>
+    <div class="text-1">
+      <p>Découvrez le charme de Villa La Houle, une maison de plage paisible nichée au bord de la mer, à quelques pas de la dynamique Grand Baie. <br>
+      Avec ses trois chambres magnifiquement aménagées, ce havre côtier est parfait pour les familles ou les groupes en quête de détente et de tranquillité.
+      </p>
+    </div>
   </div>
 
-  <div class="mini-gallery">
+  <div class="container-mini-gallery">
     <div class="img-mini-gallery"></div>
     <div class="img-mini-gallery"></div>
   </div>
@@ -46,12 +52,13 @@
   background-color: white  ;
 }
 
-.title {
+.titles {
   text-align: center;
 }
 
 .text-1 {
   text-align: center;
+  width: 50%;%
 }
 
 .img-1 {
@@ -67,9 +74,21 @@
   margin: 5px;
 }
 
-.mini-gallery {
+.img-text-right {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+}
+
+.container-mini-gallery {
   display: flex;
   flex-direction: row;
+}
+
+.container-text-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 </style>
