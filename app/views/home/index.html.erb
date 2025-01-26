@@ -1,94 +1,111 @@
+
+
 <div class="main">
 
-  <h1>test</h1>
 
-  <div class="ima-1-container">
-    <div class="img-1">
-    </div>
+  <div class="full-100vh">
+    <img src="https://res.cloudinary.com/dinxoqq5s/image/upload/v1737733013/Cap%20Ma/IMG_4557_frebv5.jpg" alt="">
   </div>
 
   <div class="titles">
     <h1>Villa la Houle</h1>
-    <h3>Cap Malheureux</h3>
+    <h4>Cap Malheureux</h4>
     <p>Mauritius</p>
   </div>
 
-  <div class="container-mini-gallery">
-    <div class="img-mini-gallery"></div>
-    <div class="img-mini-gallery"></div>
-  </div>
-
-  <div class="container-text-right">
-    <div class="img-text-right">
-
-    </div>
-    <div class="text-1">
-      <p>Découvrez le charme de Villa La Houle, une maison de plage paisible nichée au bord de la mer, à quelques pas de la dynamique Grand Baie. <br>
+  <div class="text-and-img">
+    <img src="https://res.cloudinary.com/dinxoqq5s/image/upload/v1737733011/Cap%20Ma/IMG_4544_bmk9je.jpg" alt="">
+    <p>
+      Découvrez le charme de Villa La Houle, une maison de plage paisible nichée au bord de la mer, à quelques pas de la dynamique Grand Baie. <br>
+      <br>
       Avec ses trois chambres magnifiquement aménagées, ce havre côtier est parfait pour les familles ou les groupes en quête de détente et de tranquillité.
-      </p>
-    </div>
+    </p>
   </div>
 
-  <div class="container-mini-gallery">
-    <div class="img-mini-gallery"></div>
-    <div class="img-mini-gallery"></div>
+  <div class="text-and-img">
+    <p>
+      Réveillez-vous au doux son des vagues, profitez de vues imprenables sur l'océan et détendez-vous dans le confort d'une maison qui allie commodités modernes et charme de la vie en bord de mer.
+      <br> <br>
+      Que vous souhaitiez bronzer sur les plages voisines, explorer l'atmosphère animée de Grand Baie, ou simplement savourer la tranquillité de votre refuge privé, Villa La Houle vous promet une expérience inoubliable.
+      <br> <br>
+      Votre escapade de rêve en bord de mer commence ici. Réservez Villa La Houle dès aujourd'hui !
+    </p>
+    <img src="https://res.cloudinary.com/dinxoqq5s/image/upload/v1737733030/Cap%20Ma/IMG_4551_y0u8wo.jpg" alt="">
   </div>
 
-  <div class="calendar">
-    <iframe src="https://calendar.google.com/calendar/embed?src=wacmayer%40gmail.com&ctz=Indian%2FMauritius" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  <div class="booking-container">
+    <h1>Réservation</h1>
+    <iframe
+      class="iframe"
+      src="https://www.bookingmood.com/embed/cdf71bf1-88f4-47bc-a3ff-fbcc9d410c4a?"
+      style="width:100%;border:none">
+    </iframe>
+    <script src="https://www.bookingmood.com/js/resize.js"></script>
   </div>
+
 
 </div>
 
-
 <style>
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 5rem 0;
-  background-color: white  ;
+}
+
+.iframe {
+  width: 40px;
 }
 
 .titles {
   text-align: center;
+  padding: 3rem 0;
+
 }
 
-.text-1 {
+.titles * {
+  padding: 1rem;
+}
+
+.full-100vh {
+  height: 100vh;
+}
+
+.full-100vh img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* or 'contain' for no cropping */
+}
+
+.text-and-img {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.text-and-img img{
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-and-img p {
+  padding: 5rem;
+}
+
+.booking-container {
   text-align: center;
-  width: 50%;%
+  padding: 3rem;
 }
 
-.img-1 {
-  height: 100px;
-  width: 100px;
-  background-color: blue;
+.booking-container img {
+  width: 50%;
 }
 
-.img-mini-gallery {
-  height: 100px;
-  width: 100px;
-  background-color: yellow;
-  margin: 5px;
-}
-
-.img-text-right {
-  height: 100px;
-  width: 100px;
-  background-color: black;
-}
-
-.container-mini-gallery {
-  display: flex;
-  flex-direction: row;
-}
-
-.container-text-right {
-  display: flex;
-  flex-direction: row;
+.booking-container {
+  width: 50%;
+  align-items: center;
   justify-content: center;
 }
-
 </style>
